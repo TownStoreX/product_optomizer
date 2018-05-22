@@ -1,1 +1,72 @@
-/* Child CSS */
+/* Welecome CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.welcome {
+    background-color: #8071b3;
+    height: 100vh
+}
+
+.logo-container {
+    width: 27.5%;
+    margin: 0 36.25% 0 36.25%;
+}
+
+.logo-container img {
+    padding-top: 100px;
+    width: 100%;
+}
+
+
+
+.logo-desc {
+    width: 53.2%;
+    margin-left: 23.4%;
+    font-size: 2em;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.welcome-nav-container {
+    width: 90%;
+    margin: 100px 5% 0 10%;
+}
+
+.welcome-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.welcome-nav li a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 3em;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+.nav-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item-logo,
+.nav-item-desc {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item-desc {
+    margin-left: 95px;
+    margin-top: -85px;
+}
+

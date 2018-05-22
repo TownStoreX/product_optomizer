@@ -14,11 +14,10 @@ class Child extends Component {
   }
   render() {
     return (
-      <div>
-        <p>Child Component</p>
-        <p>{this.props.welcome}</p>
-        <p>{this.props.message2}</p>
-
+      <div className = "welcome">
+        <div className="welcome-desc">
+          <h1>Hello World</h1>
+        </div>
       </div>
     );
   }

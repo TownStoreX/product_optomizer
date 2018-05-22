@@ -23,7 +23,6 @@ class Header extends Component {
       <div>
         <header>
           <img src={logo} width="200" />
-          <a class="mobile-nav-icon" href="#">&#9776;</a>
         </header>
       </div>
     );

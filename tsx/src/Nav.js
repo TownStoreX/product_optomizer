@@ -10,29 +10,32 @@ class Header extends Component {
     super( props );
   
     this.state = { 
-      products: 'products'
+      navPosition: false
     }
   }
   componentDidMount = () => {
       
   }
-  headerName = () => {
-    return 'Header From Function'
+  toggleNav = () => {
+    this.setState(prevState => ({
+      navPosition: !prevState.navPosition
+    }));
   }
 
   render() {
-    const
-      varx = '55';
+
     return (
-      <div className="nav-wrap">
-        <ul>
-          <a href="/"><li>Welcome</li></a>
-          <a href="/mystore"><li>My Store</li></a>
-          <a href="/analytics"><li>Analytics</li></a>
-        </ul>
-        {/*<Route exact testprop="xyxyxyxyx" path='/' component={Welcome} />
-        <Route exact testprop="xyxyxyxyx" path='/mystore' component={MyStore} />
-        <Route path="/analytics" render={()=><Analytics products={this.state.products} /> } />*/}
+      <div>
+        <a onClick={this.toggleNav} class="mobile-nav-icon" href="#">&#9776;</a>
+        {this.state.navPosition &&
+          <div className="nav-wrap">
+              <ul>
+                <a href="/"><li>Welcome</li></a>
+                <a href="/mystore"><li>My Store</li></a>
+                <a href="/analytics"><li>Analytics</li></a>
+              </ul>  
+          </div>
+        }
       </div>
     );
   }

@@ -1,7 +1,31 @@
 /* Child CSS */
 .nav-wrap {
 	position: fixed;
-	top: 0;
+	top: 120px;
 	right: 0;
+	bottom: 0;
 	background: #363436;
+	width: auto;
+	padding: 60px;
+}
+.nav-wrap ul {
+	list-style: none;
+}
+.nav-wrap ul li {
+	margin-bottom: 30px;
+}
+.nav-wrap a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.8rem;
+}
+.mobile-nav-icon {
+	position: absolute;
+	top: 70px;
+	transform: translateY(-50%);
+	right: 30px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 60px;
+	z-index: 9999;
 }

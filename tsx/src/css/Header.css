@@ -1,7 +1,17 @@
 /* Child CSS */
 header {
+	position: relative;
 	background: #363436;
 }
 header img {
 	display: block;
+}
+.mobile-nav-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 30px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 60px;
 }

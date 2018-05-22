@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import logo from './assets/logo.png';
 import './css/Header.css';
 
 class Header extends Component {
@@ -13,16 +14,16 @@ class Header extends Component {
       
   }
   headerName = () => {
-    return 'Header From Function'
+   
   }
 
   render() {
-    const
-      varx = '55';
+
     return (
       <div>
-        <h1>{this.headerName()}</h1>
-        <p>{varx}</p>
+        <header>
+          <img src={logo} width="200" />
+        </header>
       </div>
     );
   }

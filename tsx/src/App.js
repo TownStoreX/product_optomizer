@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Child from './Child';
 import Header from './Header';
+import Nav from './Nav';
 
 
 class App extends Component {
@@ -21,7 +22,8 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <Child onClickFunction={this.sampleFunction} welcome={this.state.message} message2={this.state.message2} />
+        <Nav />
+        {/*<Child onClickFunction={this.sampleFunction} welcome={this.state.message} message2={this.state.message2} />*/}
       </div>
     );
   }

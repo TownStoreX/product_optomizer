@@ -1,1 +1,7 @@
 /* Child CSS */
+header {
+	background: #363436;
+}
+header img {
+	display: block;
+}

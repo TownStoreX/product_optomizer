@@ -10,7 +10,7 @@ class App extends Component {
     super( props );
   
     this.state = {
-      message:'Welcome Craig. You rock so hard :)'
+      message:'testing'
     };
   }
   componentDidMount = () => {

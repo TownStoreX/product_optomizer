@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Child from './Child';
+import Header from './Header';
 
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Header />
         <Child onClickFunction={this.sampleFunction} welcome={this.state.message} message2={this.state.message2} />
       </div>
     );

@@ -14,7 +14,7 @@ class App extends Component {
     };
   }
   componentDidMount = () => {
-    this.setState({message2: 'xxxxxxxxxx'});
+    this.setState({showModule: false});
   }
   render() {
     return (

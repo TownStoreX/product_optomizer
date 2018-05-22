@@ -1,9 +1,20 @@
 /* Welecome CSS */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 .welcome {
-    background-color: #8071b3;
-    height: 100vh
+    background: -moz-linear-gradient(90deg, rgba(110,134,179,1) 0%, rgba(131,108,176,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(131,108,176,1)), color-stop(100%, rgba(110,134,179,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(90deg, rgba(110,134,179,1) 0%, rgba(131,108,176,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(90deg, rgba(110,134,179,1) 0%, rgba(131,108,176,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(90deg, rgba(110,134,179,1) 0%, rgba(131,108,176,1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(110,134,179,1) 0%, rgba(131,108,176,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#836cb0', endColorstr='#6e86b3',GradientType=0 ); /* ie6-9 */
+    height: 100vh;
 }
 
 .logo-container {
@@ -16,8 +27,6 @@
     width: 100%;
 }
 
-
-
 .logo-desc {
     width: 53.2%;
     margin-left: 23.4%;
@@ -28,14 +37,23 @@
 }
 
 .welcome-nav-container {
-    width: 90%;
-    margin: 100px 5% 0 10%;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 .welcome-nav {
     display: flex;
     flex-direction: row;
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.welcome-nav li {
+    align-self: center;
 }
 
 .welcome-nav li a {
@@ -44,10 +62,11 @@
     text-decoration: none;
     cursor: pointer;
     font-size: 3em;
-    width: 400px;
+    width: 375px;
     margin: 0;
     padding: 0;
     font-weight: 300;
+    margin-left: 30px;
 }
 
 .nav-item {
